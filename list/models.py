@@ -8,7 +8,7 @@ class Post(models.Model):
     naam = models.CharField(max_length = 100)
     email = models.EmailField(max_length=254)
     relatie = models.CharField(max_length = 100)
-    text = models.TextField()
+    text = models.TextField(max_length = 50)
     completed_date = models.DateTimeField(
             blank=True, null=True)
     completed = False
