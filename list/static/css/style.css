@@ -143,7 +143,7 @@ padding-left: 50px;
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center fixed;
+  background: url(../img/background.jpeg) top center fixed;
   background-size: cover;
 }
 
@@ -486,7 +486,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: url(../img/paenma.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
 
