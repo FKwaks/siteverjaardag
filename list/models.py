@@ -3,7 +3,6 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete = models.CASCADE)
     avatar = models.ImageField(upload_to = 'profiel/', default = 'media/profile.png')
     naam = models.CharField(max_length = 100)
     email = models.EmailField(max_length=254)
@@ -20,3 +19,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.naam
+
+
+#completed_date = models.DateTimeField(
+#        blank=True, null=True)
+#completed = False
+#author = models.ForeignKey('auth.User', on_delete = models.CASCADE)
