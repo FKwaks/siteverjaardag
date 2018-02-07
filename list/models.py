@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
 
-
 class Post(models.Model):
     avatar = models.ImageField(upload_to = 'profiel/', default = 'media/profile.png')
     naam = models.CharField(max_length = 100)
