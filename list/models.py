@@ -19,7 +19,6 @@ class Post(models.Model):
     def __str__(self):
         return self.naam
 
-
 #completed_date = models.DateTimeField(
 #        blank=True, null=True)
 #completed = False

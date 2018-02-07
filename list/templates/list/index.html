@@ -275,12 +275,12 @@
             {% for post in posts %}
             <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item wow fadeInUp pb-4" data-wow-delay="0.1s">
               <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/700x400" alt="" id="avatar">
-                <!--{% if Post.avatar and Post.avatar != "media/profile_icon.png" %}
-                <img class="card-img-top" src="{{ Post.avatar.url }}" alt="" id="avatar">
+                {% if post.avatar %}
+                <img class="card-img-top" src="{{ post.avatar.url }}" alt="" id="avatar">
                 {% else %}
-                <img class="card-img-top" src="{% static 'img/profile_icon.png' %}" alt="" id="avatar-d">
-                {% endif %}-->
+                <img class="card-img-top" src="{% static 'img/profile.png' %}" alt="" id="avatar-d">
+                {% endif %}
+
                 <div class="card-body">
                   <h4 class="card-title titel">
                     {{ post.naam }}
