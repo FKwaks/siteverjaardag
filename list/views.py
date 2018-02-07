@@ -9,13 +9,10 @@ def index(request):
 
     if request.method == "POST":
         form = PostForm(request.POST)
-
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.completed_date = timezone.now()
+            post = form.save(commit = False)
             post.save()
-            return redirect('index', form)
+            return redirect('index')
     else:
         form = PostForm()
 
